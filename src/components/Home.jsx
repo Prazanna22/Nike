@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export const Home = () => {
-    const [image, setImage] = useState("./src/assets/images/2.png");
+    const [image, setImage] = useState("./src/assets/images/5.png");
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -64,9 +64,9 @@ export const Home = () => {
                 <div className="container mx-auto py-5 px-10 md:px-16">
                     <div className="flex flex-wrap">
                         <div className=" w-full lg:w-1/2 ">
-                            <h5 className='text-2xl  text-center lg:text-left font-bold my-5 text-red-500'>Our Summer Collections</h5>
-                            <h1 className='text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7 '>The New Arrival</h1>
-                            <h1 className='text-5xl text-center lg:text-left md:text-7xl  font-extrabold my-5'><span className='text-[#f72c2c] mr-2  '>Nike</span>Shoes</h1>
+                            <h5 className=' text-xl sm:text-2xl  text-center lg:text-left font-bold my-5 text-red-500'>Our Summer Collections</h5>
+                            <h1 className=' text-3xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7 '>The New Arrival</h1>
+                            <h1 className='text-3xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7'><span className='text-[#f72c2c]  mr-2'>Nike</span>Shoes</h1>
                             <p className='text-md  text-center lg:text-left font-normal mt-10 mb-1'>Discover Stylish Nike arrivals</p>
                             <p className='text-md text-center lg:text-left font-normal mb-5 mt-1'>Quality, Comfort and Innovation for your active life</p>
                             <div className=" flex justify-center lg:justify-start ">
@@ -74,7 +74,7 @@ export const Home = () => {
 
                                 </button>
                             </div>
-                            <div className="flex gap-16 sm:gap-16 items-center justify-center lg:justify-start mt-5">
+                            <div className="flex gap-8 sm:gap-16 items-center justify-center lg:justify-start mt-5">
                                 <div className="text-center">
                                     <h1 className='text-xl font-bold my-2 md:text-2xl text-gray-500 font-sans '>1K+</h1>
                                     <span className='text-sm font-medium md:text-md '>Shoes</span>
@@ -92,7 +92,7 @@ export const Home = () => {
                         <div className="w-full lg:w-1/2  ">
                             <div className="flex flex-col justify-center items-center">
                                 <img src={image} alt="" className=' mt-20 lg:mt-1  relative z-10' />
-                                <div className='flex justify-center gap-10 sm: my-20 relative z-10'>
+                                <div className='flex justify-center gap-6 sm:gap-10 my-20 relative z-10'>
                                     <img src="./src/assets/images/5.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)] ' onClick={() => handleImage("./src/assets/images/5.png")} />
                                     <img src="./src/assets/images/3.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage("./src/assets/images/3.png")} />
                                     <img src="./src/assets/images/2.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage("./src/assets/images/2.png")} />
