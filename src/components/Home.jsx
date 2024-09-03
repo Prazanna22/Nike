@@ -19,7 +19,7 @@ import shoe7 from "../assets/shoe7.svg"
 import shoe8 from "../assets/shoe8.svg"
 
 export const Home = () => {
-    const [image, setImage] = useState("./src/assets/5.png");
+    const [image, setImage] = useState(third);
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
