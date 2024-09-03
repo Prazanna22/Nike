@@ -1,7 +1,25 @@
 import React, { useState } from 'react'
+import first from "../assets/2.png"
+import second from "../assets/3.png"
+import third from "../assets/5.png"
+import heart from "../assets/heart.png"
+import fast from "../assets/fast-delivery.png"
+import secure from "../assets/secure-payment.png"
+import customer1 from "../assets/customer1.jpeg"
+import customer2 from "../assets/customer2.svg"
+import instagram from "../assets/instagram.svg"
+import twitter from "../assets/twitter.svg"
+import facebook from "../assets/facebook.svg"
+import nike from "../assets/nike.png"
+import offer from "../assets/offer.svg"
+import shoe4 from "../assets/shoe4.svg"
+import shoe5 from "../assets/shoe5.svg"
+import shoe6 from "../assets/shoe6.svg"
+import shoe7 from "../assets/shoe7.svg"
+import shoe8 from "../assets/shoe8.svg"
 
 export const Home = () => {
-    const [image, setImage] = useState("./src/assets/images/5.png");
+    const [image, setImage] = useState("./src/assets/5.png");
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,7 +39,7 @@ export const Home = () => {
                     <ul className='flex justify-between items-center'>
 
                         <div className="">
-                            <img src="./src/assets/images/nike.png" alt="Nike Logo" className='w-10' />
+                            <img src={nike} alt="Nike Logo" className='w-10' />
                         </div>
 
 
@@ -65,8 +83,8 @@ export const Home = () => {
                     <div className="flex flex-wrap">
                         <div className=" w-full lg:w-1/2 ">
                             <h5 className=' text-xl sm:text-2xl  text-center lg:text-left font-bold my-5 text-red-500'>Our Summer Collections</h5>
-                            <h1 className=' text-3xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7 '>The New Arrival</h1>
-                            <h1 className='text-3xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7'><span className='text-[#f72c2c]  mr-2'>Nike</span>Shoes</h1>
+                            <h1 className=' text-5xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7 '>The New Arrival</h1>
+                            <h1 className='text-5xl sm:text-5xl  text-center lg:text-left md:text-7xl  font-extrabold my-7'><span className='text-[#f72c2c]  mr-2'>Nike</span>Shoes</h1>
                             <p className='text-md  text-center lg:text-left font-normal mt-10 mb-1'>Discover Stylish Nike arrivals</p>
                             <p className='text-md text-center lg:text-left font-normal mb-5 mt-1'>Quality, Comfort and Innovation for your active life</p>
                             <div className=" flex justify-center lg:justify-start ">
@@ -74,17 +92,17 @@ export const Home = () => {
 
                                 </button>
                             </div>
-                            <div className="flex gap-8 sm:gap-16 items-center justify-center lg:justify-start mt-5">
+                            <div className="flex gap-10 sm:gap-16 items-center justify-center lg:justify-start mt-5">
                                 <div className="text-center">
-                                    <h1 className='text-xl font-bold my-2 md:text-2xl text-gray-500 font-sans '>1K+</h1>
+                                    <h1 className='text-xl font-bold my-2 md:text-4xl text-black font-sans '>1K+</h1>
                                     <span className='text-sm font-medium md:text-md '>Shoes</span>
                                 </div>
                                 <div className="text-center">
-                                    <h1 className='text-xl font-bold my-2 md:text-2xl text-gray-500 font-sans'>150K+</h1>
+                                    <h1 className='text-xl font-bold my-2 md:text-4xl text-black font-sans'>150K+</h1>
                                     <span className='text-sm font-medium md:text-md'>Customers </span>
                                 </div>
                                 <div className="text-center">
-                                    <h1 className='text-xl font-bold my-2 md:text-2xl text-gray-500 font-sans '>100+</h1>
+                                    <h1 className='text-xl font-bold my-2 md:text-4xl text-black font-sans '>100+</h1>
                                     <span className='text-sm font-medium md:text-md '>Shops</span>
                                 </div>
                             </div>
@@ -93,9 +111,9 @@ export const Home = () => {
                             <div className="flex flex-col justify-center items-center">
                                 <img src={image} alt="" className=' mt-20 lg:mt-1  relative z-10' />
                                 <div className='flex justify-center gap-6 sm:gap-10 my-20 relative z-10'>
-                                    <img src="./src/assets/images/5.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)] ' onClick={() => handleImage("./src/assets/images/5.png")} />
-                                    <img src="./src/assets/images/3.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage("./src/assets/images/3.png")} />
-                                    <img src="./src/assets/images/2.png" alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage("./src/assets/images/2.png")} />
+                                    <img src={third} alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)] ' onClick={() => handleImage(third)} />
+                                    <img src={second} alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage(second)} />
+                                    <img src={ first} alt="" className='w-16 p-1 sm:w-20 md:w-28 border shadow-[0px_3px_8px_rgba(0,0,0,0.24)]' onClick={() => handleImage(first)} />
                                 </div>
 
                             </div>
@@ -106,9 +124,9 @@ export const Home = () => {
                             <h1 className='text-4xl font-bold my-5 '>Our <span className='text-[#f72c2c]'>Popular</span> Products</h1>
                             <p className='text-md font-normal '>Experience the top-notch quality and style with our sought-after selection. Discover a world of comfort, design and value. </p>
                         </div>
-                        <div className=" justify-center justify-items-center grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  gap-10 md:gap-20 my-10 ">
+                        <div className=" justify-center  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  gap-10 md:gap-20 my-10 ">
                             <div className=' p-3 '>
-                                <img src="./src/assets/images/shoe4.svg" alt="" className='w-96 my-4 ' />
+                                <img src={shoe4} alt="" className='w-96 my-4 ' />
                                 <p className='flex items-center font-medium '> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c] ">
                                     <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
                                 </svg>4.4</p>
@@ -116,7 +134,7 @@ export const Home = () => {
                                 <span className='font-semibold my-2 text-md text-[#f72c2c]'>$200.20</span>
                             </div>
                             <div className=' p-3'>
-                                <img src="./src/assets/images/shoe5.svg" alt="" className='w-96 my-4' />
+                                <img src={shoe5} alt="" className='w-96 my-4' />
                                 <p className='flex items-center font-medium '> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c] ">
                                     <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
                                 </svg>4.6</p>
@@ -124,7 +142,7 @@ export const Home = () => {
                                 <span className='font-semibold my-2 text-md text-[#f72c2c]'>$280.00</span>
                             </div>
                             <div className=' p-3'>
-                                <img src="./src/assets/images/shoe6.svg" alt="" className='w-96 my-4' />
+                                <img src={shoe6} alt="" className='w-96 my-4' />
                                 <p className='flex items-center font-medium '> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c]  ">
                                     <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
                                 </svg>4.8</p>
@@ -132,7 +150,7 @@ export const Home = () => {
                                 <span className='font-semibold my-2 text-md text-[#f72c2c]'>$300.50</span>
                             </div>
                             <div className=' p-3'>
-                                <img src="./src/assets/images/shoe7.svg" alt="" className='w-96 my-4' />
+                                <img src={shoe7} alt="" className='w-96 my-4' />
                                 <p className='flex items-center font-medium '> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c] ">
                                     <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
                                 </svg>4.5</p>
@@ -154,27 +172,27 @@ export const Home = () => {
                                 </div>
                             </div>
                             <div className="flex justify-center sm:justify-end  ">
-                                <img src="./src/assets/images/shoe8.svg" alt="" className='w-96' />
+                                <img src={shoe8} alt="" className='w-96' />
                             </div>
                         </div>
                         <div className=" justify-center justify-items-center  grid grid-cols-1  lg:grid-cols-3  my-20">
                             <div className="shadow-[0px_3px_8px_rgba(0,0,0,0.24)] w-full lg:w-72 p-5 my-6 mr-0 lg:mr-32">
                                 <div className="  bg-red-500 inline-block p-2 rounded-full">
-                                    <img src="./src/assets/images/fast-delivery.png" alt="" className='w-4 ' />
+                                    <img src={fast} alt="" className='w-4 ' />
                                 </div>
                                 <h1 className="font-semibold">Free Shipping</h1>
                                 <p className=" font-normal text-sm my-2 text-gray-500">Enjoy seamless shopping with our complimentary shipping service.</p>
                             </div>
                             <div className="shadow-[0px_3px_8px_rgba(0,0,0,0.24)] w-full lg:w-72  my-6 p-5 ">
                                 <div className="  bg-red-500 inline-block p-2 rounded-full">
-                                    <img src="./src/assets/images/secure-payment.png" alt="" className='w-4 ' />
+                                    <img src={secure} alt="" className='w-4 ' />
                                 </div>
                                 <h1 className="font-semibold">Secure Payment</h1>
                                 <p className=" font-normal text-sm my-2 text-gray-500">Experience worry-free transactions with our secure payment options.</p>
                             </div>
                             <div className="shadow-[0px_3px_8px_rgba(0,0,0,0.24)] w-full lg:w-72 p-5 ml-0 my-6 lg:ml-32">
                                 <div className="  bg-red-500 inline-block p-2 rounded-full">
-                                    <img src="./src/assets/images/heart.png" alt="" className='w-4 ' />
+                                    <img src={heart} alt="" className='w-4 ' />
                                 </div>
                                 <h1 className=" font-semibold">Love to help you</h1>
                                 <p className=" font-normal text-sm my-2 text-gray-500">Our dedicated team is here to assist you every step of the way.</p>
@@ -184,7 +202,7 @@ export const Home = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center" id='Offers'>
                         <div className="order-2 sm:order-1">
-                            <img src="./src/assets/images/offer.svg" alt="" className='w-[600px]' />
+                            <img src={offer} alt="" className='w-[600px]' />
                         </div>
                         <div className="order-1 sm:order-2">
                             <div >
@@ -206,7 +224,7 @@ export const Home = () => {
                     </div>
                     <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 justify-center my-10 px-4">
                         <div className="flex flex-col items-center text-center">
-                            <img src="./src/assets/images/customer1.jpeg" alt="" className='w-32 rounded-full my-4' />
+                            <img src={customer1} alt="" className='w-32 rounded-full my-4' />
                             <p className='w-full md:w-96 leading-8 my-1'>The attention to detail and the quality of the product exceeded my expectations. Highly recommended!</p>
                             <p className='flex items-center '><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c] ">
                                 <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
@@ -214,7 +232,7 @@ export const Home = () => {
                             <h3 className=' font-semibold text-md my-2'>John Doe</h3>
                         </div>
                         <div className="flex flex-col items-center text-center">
-                            <img src="./src/assets/images/customer2.svg" alt="" className='w-32 rounded-full my-4' />
+                            <img src={customer2} alt="" className='w-32 rounded-full my-4' />
                             <p className='w-full md:w-96 leading-8 my-1'>The product not only met but exceeded my expectations. I'll definitely be a returning customer!</p>
                             <p className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 mr-2 text-[#f72c2c] ">
                                 <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
@@ -239,9 +257,9 @@ export const Home = () => {
                         <h1 className='text-xl text-black font-bold my-1'>NIKE</h1>
                         <p className='text-sm text-gray-700 my-1 w-36 lg:w-72'>Get shoes ready for the new term at your nearest Nike store. Find Your perfect Size In Store. Get Rewards</p>
                         <div className="flex gap-4 my-4">
-                            <img src="./src/assets/icons/facebook.svg" alt="" />
-                            <img src="./src/assets/icons/twitter.svg" alt="" />
-                            <img src="./src/assets/icons/instagram.svg" alt="" />
+                            <img src={facebook} alt="" />
+                            <img src={twitter} alt="" />
+                            <img src={instagram} alt="" />
                         </div>
                     </div>
                     <div className="my-5">
